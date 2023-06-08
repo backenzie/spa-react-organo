@@ -7,6 +7,8 @@ export const CampoTexto = (props) => {
       <input
         required={props.obrg}
         placeholder={`${props.placeholder}...`}
+        onChange={(evento) => props.alteredValue(evento.target.value)}
+        value={props.valor}
       ></input>
     </div>
   );
